@@ -157,12 +157,30 @@ npx shadcn@latest add button card input textarea badge accordion
 - CrisisBanner
 - 메타 태그 (SEO)
 
+## 🚀 배포 워크플로우 (필수!)
+
+### Git + Vercel 연결됨
+- **GitHub**: https://github.com/jaychalling/workplace-bully
+- **Vercel**: 자동 배포 (push 시 트리거)
+
+### 작업 후 반드시:
+```bash
+git add -A
+git commit -m "작업 내용 설명"
+git push
+```
+
+### 확인 URL
+- 배포 후 Vercel 대시보드에서 URL 확인
+- 또는 `vercel --prod` 명령으로 수동 배포
+
 ## 완료 조건
 - [ ] `npm run build` 성공
 - [ ] `npm run dev`로 모든 페이지 접근 가능
 - [ ] 분석 → 결과 플로우 동작
 - [ ] 모바일 반응형
 - [ ] 면책/위기상담 배너 표시
+- [ ] **git push 완료** (Vercel 자동 배포)
 
 ---
 **PRD 참조**: https://idea-hub-theta.vercel.app/workplace-bully/docs
